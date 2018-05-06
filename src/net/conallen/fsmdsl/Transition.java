@@ -2,7 +2,7 @@ package net.conallen.fsmdsl;
 
 public class Transition {
 	
-	public Transition(State start, char input, State end) {
+	public Transition(State start, String input, State end) {
 		this.start = start;
 		this.input = input;
 		this.end = end;
@@ -33,14 +33,14 @@ public class Transition {
 	public void setEnd(State end) {
 		this.end = end;
 	}
-	public char getInput() {
+	public String getInput() {
 		return input;
 	}
-	public void setInput(char input) {
+	public void setInput(String input) {
 		this.input = input;
 	}
 	private State start;
 	private State end;
-	private char input;
+	private String input;
 
 }

@@ -75,8 +75,8 @@ public class JflapWriter {
 				transitionElm.appendChild(toElm);
 
 				Element readElm = doc.createElement("read");
-				char input = transition.getInput();
-				readElm.setTextContent(Character.toString(input));
+				String input = transition.getInput();
+				readElm.setTextContent(input);
 				transitionElm.appendChild(readElm);
 
 				automation.appendChild(transitionElm);
@@ -92,8 +92,6 @@ public class JflapWriter {
 			// StreamResult result = new StreamResult(System.out);
 
 			transformer.transform(source, result);
-
-			System.out.println("File saved!");
 
 		} catch (ParserConfigurationException pce) {
 			pce.printStackTrace();

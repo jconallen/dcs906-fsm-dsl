@@ -13,7 +13,7 @@ transition :
 	HYPHEN input ARROW
 ;  
 
-input : CHAR;
+input : CHAR | STRING;
 
 start_state: state ;
 

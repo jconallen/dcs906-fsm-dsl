@@ -85,8 +85,7 @@ public class Machine extends FsmBaseListener {
 			end = getState(name, true);
 		}
 
-		String inputStr = statementCtx.transition().input().getText();
-		char input = inputStr.charAt(0);
+		String input = statementCtx.transition().input().getText();
 		
 		Transition transition = new Transition(start, input, end);
 		transitions.add(transition);

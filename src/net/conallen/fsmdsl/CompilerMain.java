@@ -120,11 +120,13 @@ public class CompilerMain {
 		Machine machine = new Machine();
 		machine.compile( input );
 		
-		System.out.print( "\tNumber States: " + machine.stateCount() + ", Transitions: " + machine.transitionCount() );
+		System.out.println( "\tNumber States: " + machine.stateCount() + ", Transitions: " + machine.transitionCount() );
 		
 		File outFile = new File( output.getAbsolutePath(), outputFilename);
 		JflapWriter writer = new JflapWriter();
 		writer.writeFile(outFile, machine.transitions);
+		
+		System.out.println("\tFile saved!");
 		
 	}
 	
