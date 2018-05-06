@@ -1,5 +1,5 @@
 {
-  (state 1) -aa-> (state 2),
-  (state 2) -bb-> [state 3],
-  [state 3] -aa-> (state 2)
+  (st 1) -aa-> (st 2),
+  (st 2) -bb-> [st 3],
+  [st 3] -aa-> (st 2)
 }
