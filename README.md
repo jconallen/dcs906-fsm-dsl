@@ -15,13 +15,13 @@ test out the language by writing a compiler for it. This project includes the
 code necessary to compile a FSM definition with this language into a form
 that can be consumed by the JFLAP tool.  
 
-[JFLAP](http://www.jflap.org/) is a set of software for exploring formal languages 
+[JFLAP](https://www.jflap.org/) is a set of software for exploring formal languages 
 including Finite State Machines.  Actually it is so much more than even that.  It is 
 a wonderful tool that has helped me understand finite automata.  A great accompaniment 
 to the text.
 
 This project was developed with Eclipse (Oxygen 3 for Java) with the Antlr plugins. 
-it leverages the great work of the [Antlr project](http://www.antlr.org/), however I only
+it leverages the great work of the [Antlr project](https://www.antlr.org/), however I only
 touched the full capabilities of this library.  It is a ready for prime time DSL 
 creation tool with bindings for many languages, not just Java.  The project structure 
 is simple, since this is just one class assignment, so don't expect to see all the 
